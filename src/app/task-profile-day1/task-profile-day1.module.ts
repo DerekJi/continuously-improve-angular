@@ -1,10 +1,10 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { TaskProfileComponent } from "./task-profile/task-profile.component";
+import { TaskProfileD1Component } from "./task-profile/task-profile.component";
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [TaskProfileComponent],
-  exports: [TaskProfileComponent]
+  declarations: [TaskProfileD1Component],
+  exports: [TaskProfileD1Component]
 })
 export class TaskProfileDay1Module {}

@@ -1,0 +1,43 @@
+<ng-container *ngIf="task; else notFound">
+  <section>
+    <div class="panel panel-left">
+      <div>
+        <h4>{{ task.key }}</h4>
+        <h2>{{ task.subject}}</h2>
+      </div>
+
+      <div>
+        <h4>Description</h4>
+        <pre>{{ task.description }}</pre>
+      </div>
+    </div>
+
+    <div class="panel panel-right">
+      <div class="row">
+        <label>Status</label>
+        <div class="row-content">{{ task.status }}</div>
+      </div>
+      <div class="row">
+        <label>Assignee</label>
+        <div class="row-content">{{ task.assignee }}</div>
+      </div>
+      <div class="row">
+        <label>Reporter</label>
+        <div class="row-content">{{ task.reportedTo }}</div>
+      </div>
+      <div class="row">
+        <label>Created By</label>
+        <div class="row-content">{{ task.createdBy }}</div>
+      </div>
+      <div class="row">
+        <label>Created On</label>
+        <div class="row-content">{{ task.createdOn | date: 'dd/MM/yyyy' }}</div>
+      </div>
+    </div>
+  </section>
+
+</ng-container>
+
+<ng-template #notFound>
+  <div class="warning">Task Not Found</div>
+</ng-template>
