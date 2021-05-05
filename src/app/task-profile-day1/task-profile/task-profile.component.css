@@ -1,0 +1,36 @@
+.warning {
+  color: brown;
+}
+
+section {
+  display: flex;
+  border-radius: 8px;
+  background-color: #eee;
+}
+
+.panel {
+  margin: 8px;
+  padding: 8px;
+}
+
+.panel-left {
+  width: 70%;
+}
+
+.panel-right {
+  border-left: 1px solid #ccc;
+  width: 30%;
+  min-width: 100px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.row {
+  margin: 8px 2px;
+}
+
+.row-content {
+  margin-left: 8px;
+}
